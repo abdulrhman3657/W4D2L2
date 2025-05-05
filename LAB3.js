@@ -67,7 +67,7 @@ console.log(students.filter((name) => {
 
 // let students = ["Ali", "Sara", "Ahmed", "Lana", "Omar", "Noor"];
 
-let newArr = [ ["Ali", [85, 90, 78]], ["Sara", [99, 100, 56]], ["Ahmed", [85, 90, 78]], ["Lana", [85, 90, 78]], ["Omar", [85, 90, 78]], ["Noor", [85, 90, 78]]];
+let newArr = [ ["Ali", [85, 90, 78]], ["Sara", [99, 50, 56]], ["Ahmed", [85, 80, 71]], ["Lana", [99, 90, 78]], ["Omar", [85, 67, 78]], ["Noor", [99, 99, 78]]];
 
 students.push(newArr);
 
@@ -91,4 +91,14 @@ for (let i = 0; i < studentsList.length; i++) {
 }
 
 console.log(studentsList)
+
+console.log("--------------")
+
+for (let i = 0; i < studentsList.length; i++) {
+
+    if(studentsList[i][2] > 80){
+        console.log(studentsList[i])
+    }
+
+}
 
